@@ -22,5 +22,3 @@ Las etiquetas pueden tener atributos que agregan unformación adicional. En el e
 
 
 para cerrar una etiquieta, se necesita colocar otra etiqueeta, pero con la diferencia de que esta última tiene una diagonal.
-
-Los enlaces requieren de "href" el cuál va en la etiqueta de apertura y por eso es que hay una etiqueta de cierre a mitad del escrito.
