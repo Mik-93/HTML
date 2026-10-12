@@ -1,0 +1,44 @@
+<!-- Para oclocar imagenes dentor de html usamosla etiqueta:
+ 
+<img />
+
+Es una etiqueta de autocierre, es decir, no necesita etiqueta de cierre. (selfclosing)
+
+normalente, las etiquetas que selfclosing tienen una diagonal antes del cierre de la etiqueta, pero en html5 ya no es necesario ponerla.
+ 
+El atributo "src" nos permite colocar la ruta de la imagen que queremos mostrar en el sitio web. Y puede recibir una URL externa o una ruta (path) local.
+
+Atributo "alt" nos permite colocar un texto alternativo que se mostrará en caso de que la imagen no pueda ser cargada. Es obligatorio colocar este atributo para mejorar la accesibilidad de los sitios web.
+
+los atributo s Width y height nos permiten cambiar el tamaño de la imagen, pero no es recomendable usarlos, ya que pueden deformar la imagen. Aunque lo ideal es hacerlo en CSS.
+
+
+Esto de los tamaños solo es factible con las imagenes locales, ya que las externas no se pueden modificar su tamaño.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+<body>
+    <h1>Imagenes</h1>
+    <p>Las imagenes nos permite colocar elementos visuales en los sitios web</p>
+
+    <h2>Imagenes locales</h2>
+    <img src="https://i.pinimg.com/736x/44/5d/b5/445db51a8f1910eec64dd2682ac562a6.jpg" alt="Patito color blanco que está reclinando su cuerpo y tiene los ojos cerrados. El pato se encuentra sobre un piso de ocncreto gris."/>
+
+    <h2>Imagenes externas</h2>
+    <img src="imagenes/erizo.jpg" alt="Un Gechejojo el cual está en primer plano y está viendo hacia la derecha del foco. Está dentro de un lavabo blanco" width="300" height="300
+    " />
+
+
+
+
+    <img />
+</body>
+</html>
