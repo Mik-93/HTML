@@ -1,0 +1,57 @@
+
+<!-- 
+
+Audio y Video
+
+    Estas etiquetas nos permiten insertar contenido multimedia.
+ 
+<audio>...</audio>
+<video>...</video>
+
+    Atributos
+
+        "controls" 👉 nos permite mostrar los controles de reproducción del audio o video, como play, pause, volumen, etc. Es un atributo booleano, es decir, no necesita un valor.
+
+
+        "autoplay" 👉 nos permite reproducir el audio o video automáticamente cuando se carga la página. Es un atributo booleano, es decir, no necesita un valor.
+
+        "loop" 👉 nos permite reproducir el audio o video en bucle, es decir, cuando termina de reproducirse, vuelve a empezar automáticamente. Es un atributo booleano, es decir, no necesita un valor. Se reproduce de manera infinita. A google no le gusta que no se pueda parar y obliga a los programadores a añadir una opción para qeu pare el bucle.
+
+        "muted" 👉 nos permite silenciar el audio o video. Es un atributo booleano, es decir, no necesita un valor.
+
+        "poster" 👉 nos permite colocar una imagen que se mostrará antes de que se reproduzca el video. Solo funciona con la etiqueta <video>.
+
+    Elemento source
+
+            Dentro de las etiquetas <audio> y <video> se define la etiquerta "src" la cual es una etiqueta autoclosing, y nos permite colocar la ruta del archivo de audio o video que queremos mostrar en el sitio web. Y puede recibir una URL externa o una ruta (path) local.
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y Video</title>
+</head>
+<body>
+    <h1>Audio y Video</h1>
+
+    <h2>Contenido de Audio</h2>
+    <audio controls autoplay muted>
+        <source src="multimedia/aruarian dance - Nujabes .mp3" />
+        Tu navegador no es compatible con el contenido multimedia. Por favor, actualiza tu navegador. 
+    </audio>
+
+    <h2> Contenido de Video</h2>
+    <video controls autoplay muted  width="1000" height="auto">
+        <source src="multimedia/patitos.mp4" />
+        Tu navegador no es compatible con el contenido multimedia. Por favor, actualiza tu navegador.   
+    </video>
+
+
+
+</body>
+</html>
