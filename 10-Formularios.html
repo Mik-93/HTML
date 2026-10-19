@@ -1,0 +1,65 @@
+<!-- 
+
+    Formularios
+
+Son elementos que permitiran a los usuarios ingresar información en el sitio web, como por ejemplo, nombre, correo electrónico, contraseña, etc. Y esta información puede ser enviada a un servidor para ser procesada.
+
+   Para crear un formulario, se utiliza la etiqueta:
+   
+   <form>...</form> 
+    
+    dentro de ella se colocan los elementos se colocaran los campos (fields) y etiquetas (labels).
+
+    <input/> 👉 campo de acceso de información. Son elementos (selfclosing). Y hay de diferentes tipos: texto, botón, checkbox, etc...
+
+    <label>...</label> 👉 Estas etiquetas se asocian a un input.
+
+
+    Parámetros
+
+    Para Label:
+        for: indica la relación entre label e input.
+
+    Para Input:
+        type: indica el tipo de campo (text, password, checkbox, radio, submit, etc...)
+        name: nombre del campo con el que se relaciona el label.
+        value: valor del campo.
+        placeholder: texto que aparece dentro del input cuando está vacío. Funciona como una pista (hint) para el usuario.
+        required: indica que el campo es obligatorio.
+        id: Identificador, Nos sirve par programar formularios y para validar el formulario/dato en un input. Se relaciona con el label a través del atributo for. y se usa JavaScript para manipular el input.
+
+
+        <textarea>...</textarea> 👉 Es un campo de texto multilinea. Se puede colocar un placeholder, y se puede indicar el tamaño del campo con los atributos cols y rows.
+        <select>...</select> 👉 Es un campo de selección. Se puede colocar un placeholder, y se puede indicar el tamaño del campo con los atributos cols y rows.
+        <option>...</option> 👉 Es un campo de selección. Se puede colocar un placeholder, y se puede indicar el tamaño del campo con los atributos cols y rows.
+       <button>...</button> 👉 Es un botón que puede ser de tipo submit, reset o button. Se puede colocar un placeholder, y se puede indicar el tamaño del campo con los atributos cols y rows, además, se debe de programar su funcionamiento. 
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form> 
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" Placeholder="Escribe aquí" id="Nombre"/> 
+        <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+        <select name="Opciones" id="Opciones">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        <button type="submit">Enviar</button>
+        
+      
+    </form>
+</body>
+</html>
